@@ -7,9 +7,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories(basePackages = "com.germie.fency.repositories")
-@ComponentScan(basePackages = "com.germie.fency.controllers")
+@ComponentScan(basePackages = {"com.germie.fency.controllers"})
 public class FencyApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(FencyApplication.class, args);
 	}
