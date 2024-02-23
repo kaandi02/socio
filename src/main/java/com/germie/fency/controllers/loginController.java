@@ -14,7 +14,7 @@ public class loginController {
 
     @PostMapping("/login")
     public ResponseEntity<String> loginPost(@RequestBody loginUser user) {
-        System.out.println(lrepo.findById(user.username));
+        System.out.println(" Username = " +user.username+ " " );
         return ResponseEntity.status(200).body("User Data Added to DB");
     }
 }
