@@ -1,5 +1,6 @@
 package com.germie.fency.entities;
 
+import jakarta.validation.constraints.NotNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.crypto.bcrypt.*;
@@ -8,7 +9,9 @@ import org.springframework.security.crypto.bcrypt.*;
 public class loginUser {
 
     @Id
+    @NotNull
     public String username;
+
     public String password;
 
     loginUser(String username, String password){
