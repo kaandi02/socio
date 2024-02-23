@@ -1,6 +1,8 @@
 package com.germie.fency.entities;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "users")
 public class registerUser {
 
     public String uname;
