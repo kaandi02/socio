@@ -20,7 +20,7 @@ public class registerController {
         reg_repo.save(reg);
         // System.out.print(reg);
         // String salt = KeyGenerator.string().generateKey();
-        return ResponseEntity.status(201).body(reg.uname);
+        return ResponseEntity.status(201).body(reg.username);
     }
     
 }

@@ -8,10 +8,10 @@ import org.springframework.security.crypto.bcrypt.*;
 @Document(collection = "loggedusers")
 public class loginUser {
 
-    @Id
+
     @NotNull
     public String username;
-
+    @NotNull
     public String password;
 
     loginUser(String username, String password){
