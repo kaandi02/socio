@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class loginController {
+
     @Autowired
     private userRepository lrepo;
 
     @PostMapping("/login")
     public ResponseEntity<String> loginPost(@RequestBody loginUser user) {
-        lrepo.save(user);
-        return ResponseEntity.status(200).body("User Data Added to Database");
+        System.out.println(" Username = " +user.username+ " " );
+        return ResponseEntity.status(200).body("User Data Added to DB");
     }
 }
